@@ -6,3 +6,13 @@
 #
 
 LOCAL_PATH := device/motorola/mototabg20
+
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    vbmeta_system \
+    vbmeta_vendor \
+    product \
+    boot \
+    vendor \
+    system
