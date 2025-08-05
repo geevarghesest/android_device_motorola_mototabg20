@@ -14,7 +14,7 @@ Blocking checks
 - [ ] Backup to internal/microSD
 - [ ] Restore from internal/microSD
 - [ ] reboot to system
-- [ ] ADB
+- [ok] ADB
 
 Medium checks
 - [ ] update.zip sideload
@@ -24,18 +24,18 @@ Medium checks
 - [ ] all important partitions listed in mount/backup lists
 - [ ] backup/restore to/from external (USB-OTG) storage (not supported by the device)
 - [ ] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
-- [ ] decrypt /data
+- [ok] decrypt /data
 - [ ] Correct date
 
 Minor checks
 - [ ] MTP export
-- [ ] reboot to bootloader
+- [ok] reboot to bootloader
 - [ ] reboot to recovery
 - [ok] poweroff
 - [ok] battery level
-- [ ] temperature
+- [ok] temperature
 - [ ] encrypted backups
-- [ ] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
+- [ok] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
 - [ ] USB mass storage export
 - [ok] set brightness
 - [ok] vibrate
