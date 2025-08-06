@@ -1,5 +1,4 @@
-# TWRP device tree for Motorola moto tab g20 (tb8768tp1_64_bsp)
-
+# TWRP device tree for Motorola tab g20 
 ```
 #
 # Copyright (C) 2025 The Android Open Source Project
@@ -7,38 +6,39 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+```
+## Working features so far
 
-Blocking checks
-- [ok] Correct screen/recovery size
-- [ok] Working Touch, screen
+### Blocking checks
+- [x] Correct screen/recovery size
+- [x] Working Touch, screen
 - [ ] Backup to internal/microSD
 - [ ] Restore from internal/microSD
 - [ ] reboot to system
-- [ok] ADB
+- [x] ADB
 
-Medium checks
+### Medium checks
 - [ ] update.zip sideload
-- [ok] UI colors (red/blue inversions)
-- [ok] Screen goes off and on
+- [x] UI colors (red/blue inversions)
+- [x] Screen goes off and on
 - [ ] F2FS/EXT4 Support, exFAT/NTFS where supported
 - [ ] all important partitions listed in mount/backup lists
 - [ ] backup/restore to/from external (USB-OTG) storage (not supported by the device)
 - [ ] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)
-- [ok] decrypt /data
+- [x] decrypt /data
 - [ ] Correct date
 
-Minor checks
+### Minor checks
 - [ ] MTP export
-- [ok] reboot to bootloader
+- [x] reboot to bootloader
 - [ ] reboot to recovery
-- [ok] poweroff
-- [ok] battery level
-- [ok] temperature
+- [x] poweroff
+- [x] battery level
+- [x] temperature
 - [ ] encrypted backups
-- [ok] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
+- [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
 - [ ] USB mass storage export
-- [ok] set brightness
-- [ok] vibrate
+- [x] set brightness
+- [x] vibrate
 - [ ] screenshot
 - [ ] partition SD card
-```

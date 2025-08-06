@@ -42,10 +42,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# MTK PlPath Utils
+# MTK plpath OSS replacement
 PRODUCT_PACKAGES += \
-    mtk_plpath_utils \
-    mtk_plpath_utils.recovery
+    create_pl_dev \
+    create_pl_dev.recovery
 
 # Boot Control HAL
 PRODUCT_PACKAGES += \
