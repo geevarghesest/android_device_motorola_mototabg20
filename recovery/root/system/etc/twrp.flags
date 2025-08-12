@@ -1,6 +1,5 @@
 # <mount>                 <type>   <path>                               <mnt_flags and options>
 
-/storage                  ext4     /data/media/0                        flags=display="Internal Storage";usermrf;fsflags="bind";backup=1;removable;
 /boot                     emmc     /dev/block/by-name/boot              flags=display="Boot";slotselect;flashimg=1;backup=1;
 /vbmeta                   emmc     /dev/block/by-name/vbmeta            flags=display="VBMeta";slotselect;flashimg=1;backup=1;
 /vbmeta_vendor            emmc     /dev/block/by-name/vbmeta_vendor     flags=display="VBMeta_vendor";slotselect;flashimg=1;backup=1;
@@ -8,34 +7,26 @@
 /logo                     emmc     /dev/block/by-name/logo              flags=display="Logo";flashimg=1;backup=1;
 /dtbo                     emmc     /dev/block/by-name/dtbo              flags=display="DTBO";slotselect;flashimg=1;backup=1;
 
-/mnt/vendor/protect_f     ext4     /dev/block/by-name/protect1          flags=display=protect_f
-/mnt/vendor/protect_s     ext4     /dev/block/by-name/protect2          flags=display=protect_s
-/mnt/vendor/nvdata        ext4     /dev/block/by-name/nvdata            flags=display=nvdata
-/mnt/vendor/nvcfg         ext4     /dev/block/by-name/nvcfg             flags=display=nvcfg
-/persistent               emmc     /dev/block/by-name/frp               flags=display=persistent
-/nvram                    emmc     /dev/block/by-name/nvram             flags=display=nvram
-/proinfo                  emmc     /dev/block/by-name/proinfo           flags=display=proinfo
-/bootloader               emmc     /dev/block/by-name/lk                flags=display=bootloader
-/bootloader2              emmc     /dev/block/by-name/lk2               flags=display=bootloader2
-/misc                     emmc     /dev/block/by-name/para              flags=display=misc
-/expdb                    emmc     /dev/block/by-name/expdb             flags=display=expdb
-/seccfg                   emmc     /dev/block/by-name/seccfg            flags=display=seccfg
-/tee1                     emmc     /dev/block/by-name/tee1              flags=display=tee1
-/tee2                     emmc     /dev/block/by-name/tee2              flags=display=tee2
-/scp1                     emmc     /dev/block/by-name/scp1              flags=display=scp1
-/scp2                     emmc     /dev/block/by-name/scp2              flags=display=scp2
-/sspm_1                   emmc     /dev/block/by-name/sspm_1            flags=display=sspm_1
-/sspm_2                   emmc     /dev/block/by-name/sspm_2            flags=display=sspm_2
-/md1img                   emmc     /dev/block/by-name/md1img            flags=display=md1img
-/md1dsp                   emmc     /dev/block/by-name/md1dsp            flags=display=md1dsp
-/md1arm7                  emmc     /dev/block/by-name/md1arm7           flags=display=md1arm7
-/md3img                   emmc     /dev/block/by-name/md3img            flags=display=md3img
-/gz1                      emmc     /dev/block/by-name/gz1               flags=display=gz1
-/gz2                      emmc     /dev/block/by-name/gz2               flags=display=gz2
-/spmfw                    emmc     /dev/block/by-name/spmfw             flags=display=spmfw
-/boot_para                emmc     /dev/block/by-name/boot_para         flags=display=boot_para
-/odmdtbo                  emmc     /dev/block/by-name/odmdtbo           flags=display=odmdtbo
-/lenovocust               ext4     /dev/block/by-name/lenovocust        flags=display=lenovocust
+/protect_f                emmc     /dev/block/by-name/protect1          flags=display=protect_f;backup=1;
+/protect_s                emmc     /dev/block/by-name/protect2          flags=display=protect_s;backup=1;
+/nvdata                   emmc     /dev/block/by-name/nvdata            flags=display=nvdata;backup=1;
+/nvcfg                    emmc     /dev/block/by-name/nvcfg             flags=display=nvcfg;backup=1;
+/nvram                    emmc     /dev/block/by-name/nvram             flags=display=nvram;backup=1;
+/persistent               emmc     /dev/block/by-name/frp               flags=display=persistent;backup=1;
+/proinfo                  emmc     /dev/block/by-name/proinfo           flags=display=proinfo;backup=1;
+/bootloader               emmc     /dev/block/by-name/lk                flags=display=bootloader;slotselect;backup=1;
+/misc                     emmc     /dev/block/by-name/para              flags=display=misc;backup=1;
+/expdb                    emmc     /dev/block/by-name/expdb             flags=display=expdb;backup=1;
+/seccfg                   emmc     /dev/block/by-name/seccfg            flags=display=seccfg;backup=1;
+/tee                      emmc     /dev/block/by-name/tee               flags=display=tee;slotselect;backup=1;
+/scp                      emmc     /dev/block/by-name/scp               flags=display=scp;slotselect;backup=1;
+/sspm                     emmc     /dev/block/by-name/sspm              flags=display=sspm;slotselect;backup=1;
+/md1img                   emmc     /dev/block/by-name/md1img            flags=display=md1img;slotselect;backup=1;
+/gz                       emmc     /dev/block/by-name/gz                flags=display=gz;slotselect;backup=1;
+/spmfw                    emmc     /dev/block/by-name/spmfw             flags=display=spmfw;slotselect;backup=1;
+/boot_para                emmc     /dev/block/by-name/boot_para         flags=display=boot_para;backup=1;
+/lenovocust               ext4     /dev/block/by-name/lenovocust        flags=display=lenovocust;backup=1;
+/preloader_raw            emmc     /dev/block/by-name/preloader_raw     flags=display="Preloader";slotselect;
 
 # Removable storage
 /external_sd              auto     /dev/block/mmcblk1p1  /dev/block/mmcblk1     flags=display="MicroSD card";storage;wipeingui;removable;fsflags="utf8"
